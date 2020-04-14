@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="intern.house">
+    <meta property="og:site_name" content="intern.house">
+    <meta property="og:url" content="https://intern.house">
+    <meta property="og:description"
+        content="Intern.House is an online platform for interns to find housing listings and connect with their industry.">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="https://intern.house/assets/Logo.png">
+
+    <meta name="description"
+        content="Intern.House is an online platform for interns to find housing listings and connect with their industry.">
+    <meta name="keywords"
+        content="real estate, intern, internship, connect, industry, startup, start-up, start up, interns, listings, housing">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #C0E6FF;
+            padding: 2%;
+        }
+
+        .comfortaa {
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .mt-100 {
+            margin-top: 90px;
+        }
+
+        .fs-12 {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .display-4 {
+            font-size: 40px;
+        }
+
+        .container {
+            margin-top: 2%;
+        }
+
+        .input-group {
+            max-width: 500px;
+        }
+
+        .card-container {
+            margin: 0 -1% !important;
+        }
+
+        .card {
+            width: 33%;
+            background-color: white;
+            border: none;
+            margin: 0 1%;
+        }
+
+        .table-responsive>table {
+            margin-bottom: 0px;
+        }
+
+        table {
+            border-color: black;
+        }
+
+        table td:nth-child(1) {
+            width: 25%;
+        }
+
+        table td:nth-child(2) {
+            width: 50%;
+        }
+
+        table td:nth-child(3) {
+            width: 25%;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+
+        .hero-container {
+            position: relative;
+            height: 300px;
+            margin: auto 0 0 0;
+        }
+
+        .hero-img {
+            position: absolute;
+            bottom: 0;
+            width: 380px;
+            height: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .mt-100 {
+                margin-top: 60px;
+            }
+
+            .container {
+                margin-top: 50px;
+            }
+
+            .d-flex {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .card-container {
+                margin: 0 !important;
+            }
+
+            .display-3 {
+                font-size: 50px;
+            }
+
+            .display-4 {
+                font-size: 30px;
+            }
+
+        }
+
+        @media (max-width: 1150px) {
+            .d-flex.hero-flex {
+                flex-direction: row;
+            }
+
+            .hero-img {
+                width: 340px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .d-flex.hero-flex {
+                flex-direction: column;
+            }
+
+            .hero-img {
+                width: 380px;
+                height: 300px;
+            }
+        }
+    </style>
+    <title>intern.house</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex flex-row">
+            <p class="display-3 font-weight-bold comfortaa mr-3" id="title">
+                intern.house
+            </p>
+            <img src="/assets/Logo.png" alt="Logo" class="img-fluid mb-3" style="height: 50px;">
+        </div>
+
+        <p>A place for interns to find house listings and connect.</p>
+
+
+        <div class="d-flex hero-flex">
+            <div>
+                <p class="display-4 font-weight-bold mt-100" id="tagline">
+                    No fees,<br />
+                    built for interns,<br />
+                    network with your industry.
+                </p>
+
+                <form action="https://formspree.io/mzbabkpp" method="POST">
+                    <label for="email">Email</label>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="name@email.com" name="email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" type="submit" id="button-addon2">Let's keep in touch</button>
+                        </div>
+                    </div>
+                </form>
+                <p>Keeping in touch allows us to contact you when we have an alpha/beta test.</p>
+            </div>
+            <div class="hero-container">
+                <img src="/assets/hero.svg" alt="Person viewing the application" class="hero-img ml-4">
+            </div>
+        </div>
+
+        <p class="display-4 font-weight-bold mt-100" id="what-we-are-building">
+            What we are building.
+        </p>
+
+        <div class="d-flex card-container">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    A <strong>consolidated</strong> list of real estate listings in the location you need with more
+                    additional features.
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    A social <strong>network</strong> that allows you to find more people in your industry and help get
+                    to know them.
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    A platform where you can <strong>browse and plan</strong> for your upcoming opportunities.
+                </div>
+            </div>
+        </div>
+
+        <p class="display-4 font-weight-bold mt-100" id="roadmap">
+            Road Map
+        </p>
+
+        <div class="table-responsive">
+            <table class="table table-light table-bordered shadow">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Date (Tentatively)</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alpha Release</td>
+                        <td>September 2020</td>
+                        <td>In development</td>
+                    </tr>
+                    <tr>
+                        <td>Beta Release</td>
+                        <td>January 2020</td>
+                        <td>Planning phase</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <p class="display-4 font-weight-bold mt-100" id="social">
+            Social Media
+        </p>
+
+        <p><a href="https://www.linkedin.com/company/intern-house-app/" target="_blank" rel="noopener">LinkedIn</a></p>
+
+        <p class="display-4 font-weight-bold mt-100" id="social">
+            Contact
+        </p>
+
+        <p><a href="mailto:master.intern.house@gmail.com" rel="noopener">Company Email</a></p>
+    </div>
+
+
+    <footer class="mt-100">
+        <p class="text-center">Intern.House &copy; 2020. All rights reserved.</p>
+        <p class="text-center fs-12">Available only in United States (at this moment). <br>
+            Currently in under development.
+        </p>
+
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</html>
