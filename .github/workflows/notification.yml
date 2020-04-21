@@ -1,0 +1,26 @@
+name: Discord Notification
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+        steps:
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: Intern.House Git Bot
+          DISCORD_AVATAR: https://i.imgur.com/79bgPSZ.png
+        uses: Ilshidur/action-discord@master
+        with:
+          args: '({{ EVENT_PAYLOAD.repository.full_name }}) || A update was made to the master branch.'
+
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
